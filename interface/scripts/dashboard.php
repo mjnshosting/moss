@@ -18,6 +18,8 @@ if (empty($_SESSION['user_name'])) {
 //Use an IF statement later on to see if the returned value of the command "ifconfig wlan0" returns anything greater
 //than zero. If so then don’t display it on page.
 
+//GET ALL INTERFACES
+//ifconfig -a | sed 's/[ \t].*//;/^\(lo\|\)$/d'
 
 //STATIC INFO
 $sys_info = explode(" ", shell_exec ("uname -a"));
