@@ -21,7 +21,7 @@ class OneFileLoginApplication
     /**
      * @var string Path of the database file (create this with _install.php)
      */
-    private $db_sqlite_path = "/var/www/html/moss/scripts/moss_users_db.sqlite3";
+    private $db_sqlite_path = "scripts/moss_users_db.sqlite3";
 
     /**
      * @var object Database connection
