@@ -1,0 +1,14 @@
+ServerName moss
+<VirtualHost *:80>
+        DocumentRoot /var/www/html
+        ProxyRequests off
+        SetOutputFilter proxy-html
+        <Location /shell>
+                ProxyPass http://127.0.0.1:6125
+                ProxyPassReverse http://127.0.0.1:6125
+                Order allow,deny
+                Allow from all
+        </Location>
+        ServerSignature On
+</VirtualHost>
+

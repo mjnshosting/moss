@@ -1,0 +1,12 @@
+pty "pptp  --nolaunchpppd"
+name admin
+password mjns
+remotename pptpd
+noauth
+lock
+persist
+nodefaultroute
+nobsdcomp
+nodeflate
+lcp-echo-failure 30
+lcp-echo-interval 10
