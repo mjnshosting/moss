@@ -15,7 +15,7 @@ $rpcid = escapeshellcmd($_POST['rpcid']);
     **************************************/
 
     // Create (connect to) SQLite database in file
-    $file_db = new PDO('sqlite:moss_db.sqlite3');
+    $file_db = new PDO('sqlite:../../dbs/moss_db.sqlite3');
     // Set errormode to exceptions
     $file_db->setAttribute(PDO::ATTR_ERRMODE,
                             PDO::ERRMODE_EXCEPTION);

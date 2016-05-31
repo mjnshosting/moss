@@ -23,7 +23,7 @@ $sys_ip_ppp0 = shell_exec ("ifconfig ppp0 | grep 'inet addr:' | cut -d ':' -f2 |
     **************************************/
 
     // Create (connect to) SQLite database in file
-    $file_db = new PDO('sqlite:moss_db.sqlite3');
+    $file_db = new PDO('sqlite:../../dbs/moss_db.sqlite3');
     // Set errormode to exceptions
     $file_db->setAttribute(PDO::ATTR_ERRMODE,
                             PDO::ERRMODE_EXCEPTION);

@@ -18,7 +18,7 @@ $thm = escapeshellcmd($_POST['thm']);
     **************************************/
  
     // Create (connect to) SQLite database in file
-    $file_db = new PDO('sqlite:moss_db.sqlite3');
+    $file_db = new PDO('sqlite:../../dbs/moss_db.sqlite3');
     // Set errormode to exceptions
     $file_db->setAttribute(PDO::ATTR_ERRMODE, 
                             PDO::ERRMODE_EXCEPTION);
@@ -40,8 +40,7 @@ $thm = escapeshellcmd($_POST['thm']);
                     thsf TEXT,
                     thuf TEXT,
                     thpf TEXT,
-                    thmf TEXT,
-		    thstf INTEGER)");
+                    thmf TEXT)");
     
     // Delete old record from the table.
     $file_db->query('DELETE FROM tunnelhome WHERE id = 1');

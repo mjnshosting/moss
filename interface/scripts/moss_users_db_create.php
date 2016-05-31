@@ -10,7 +10,7 @@ error_reporting(E_ALL);
 
 // config
 $db_type = "sqlite";
-$db_sqlite_path = "/var/www/html/moss/scripts/moss_users_db.sqlite3";
+$db_sqlite_path = "../../dbs/moss_users_db.sqlite3";
 
 // create new database file / connection (the file will be automatically created the first time a connection is made up)
 $db_connection = new PDO($db_type . ':' . $db_sqlite_path);
@@ -20,7 +20,6 @@ $sql = 'CREATE TABLE IF NOT EXISTS `users` (
         `user_id` INTEGER PRIMARY KEY,
         `user_name` varchar(64),
         `user_password_hash` varchar(255));
-//        `reg_key_hash` varchar(255));
         CREATE UNIQUE INDEX `user_name_UNIQUE` ON `users` (`user_name` ASC);
         ';
 
@@ -31,8 +30,8 @@ $query->execute();
 // check for success
 if (file_exists($db_sqlite_path)) {
     echo "Database $db_sqlite_path was created, installation was successful.\n";
-    shell_exec ('/bin/chmod 644 /var/www/html/moss/scripts/moss_users_db.sqlite3');
-    shell_exec ('/bin/chown www-data:www-data /var/www/html/moss/scripts/moss_users_db.sqlite3');
+    shell_exec ('/bin/chmod 644 ../../dbs/moss_users_db.sqlite3');
+    shell_exec ('/bin/chown www-data:www-data ../../dbs/moss_users_db.sqlite3');
 } else {
     echo "Database $db_sqlite_path was not created, installation was NOT successful. Missing folder write rights ?";
 }
