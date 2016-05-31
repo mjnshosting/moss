@@ -1305,8 +1305,8 @@ footer h3 {
 .div-table {
   display: table;
   width: auto;
-  border-spacing:5px;/*cellspacing:poor IE support for  this*/
-//  border:1px solid  #666666;
+  border-spacing:5px;
+/*  border:1px solid  #666666; */
 }
 
 .div-table-row {
@@ -1317,28 +1317,13 @@ footer h3 {
 
 .div-table-col {
   float: left;
-  /*fix for  buggy browsers*/
-//  background-color:#ccc;  
+/*  background-color:#ccc;  */
   display: table-column;
 }
 
 img.form-submit {
     cursor: pointer; 
     cursor: hand;
-    }
-
-/* delete when done converting tables to divs*/
-
-#container {
-    display: table;
-    }
-
-#row  {
-    display: table-row;
-    }
-
-#left, #right, #middle {
-    display: table-cell;
     }
 
 .logo {
