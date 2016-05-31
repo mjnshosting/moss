@@ -9,7 +9,6 @@ if (empty($_SESSION['user_name'])) {
 
 <SCRIPT TYPE="text/javascript">
         $('html,body').animate({scrollTop: $("#scroll").offset().top},'slow');
-	$(hiderpcqresults);
 </SCRIPT>
 
 <div id="scroll"></div>
@@ -54,16 +53,20 @@ if (empty($_SESSION['user_name'])) {
 		</div>
 		<div class='div-table-col' style="text-align: left">
 			<p style="font-weight: bold">Tool Description:</p>
-				</p>The purpose of this tool is to allow Wake on LAN 
-				</br>magic packets to be sent over the network from this 
-				</br>device. The target device must reside on the same 
-				</br>LAN/VLAN/WLAN as this device.</p>
+				<p>The purpose of this tool is to allow this device to 
+				</br>network capable APC Power Distribution Units over the 
+				</br>network. This tool allows you to control the ports and 
+				</br>check if the port is ON or OFF by selecting the desired 
+				</br>entry's radio button and pressing the <img src="images/info-24.png" alt="status icon"> which will update 
+				</br>the "Status" column for the selected entry.</p>
+				<p style="font-weight:bold">**This tool passes credentials via telnet and should only 
+				</br>be used on a trusted network and the PDU should not be 
+				</br>given a gateway unless absolutely necessary. Please view 
+				</br>README and notes concernning PDU setup.**</p>
 		</div>
 
 	</div>
 </div>
-
-
 </div>
     <h2 style="font-weight:300; font-size:33px; line-height:35px; text-align:center; padding-top:20px; padding-bottom:20px;">RPC Device List</h2>
 
@@ -87,5 +90,4 @@ if (empty($_SESSION['user_name'])) {
 </table>
 </br>
 <div id="list-rpc"></div>
-
 </div>
