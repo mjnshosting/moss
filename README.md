@@ -7,11 +7,30 @@ so many useful projects out there and I wanted to integrate them all into a nice
 
 # Overview:
 
-## Login Page:
+## Login:
     Template provided by [w3layouts](https://w3layouts.com/preview/?l=/entrar-shadow-flat-form-template/)
-    using the [php-login-one-file by panique](https://github.com/panique/php-login-one-file) which both have 
+    using the [php-login-one-file by panique] (https://github.com/panique/php-login-one-file) which both have 
     been modified for this project. Changing the color scheme and functionality of the registration page. 
     
 ## Status: 
     Defualt landing page after log in. Shows system information such as hardware/software info, resource usage,
     mount points, uptime, interface stats, apcupsd info (if daemon exists) and more as time goes on. 
+    
+## Network Health:
+    This is a [cacti](http://cacti.net/) install which is an open source light weight network monitoring and data 
+    graphing tool that has many plugins available. Device interface statistics, hard drive usage, and connectivity
+    are graphed using templates or custom graphs. 
+    
+## Tunnel Home:
+    The Tunnel Home interface also known as "Behind Enemy Lines" allows the device to connect back to a centrally
+    located server via PPTP (insecure) which serves as a central point of access for the MOSS device. This is 
+    the best way to communicate with the device on site without opening up ports in the customer's firewall as well
+    as allowing our device to traverse multi-NATed networks. All commuinications with the MOSS device as via secure
+    protocols like HTTPS and SSH unless configured otherwise which we do not suggest because of the insecure nature
+    PPTP. PPTP can be switched out with other VPN protocols such as OpenVPN (future default) and IPSec. PPTP is just
+    easier and gives us what we need at this point which is a tunnel. This tunnel can terminate to a central server
+    which is what we have planned for the next phase of this project (**EPO**). 
+
+## Connectivity:
+    This serves as a general connectivity and information tool that 
+    
