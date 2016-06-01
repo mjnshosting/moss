@@ -5,13 +5,13 @@ the ability to control network capable APC PDUs for remote control of power outl
 worked on but this realease should suffice. This was done to fill a need and became even greater. There are
 so many useful projects out there and I wanted to integrate them all into a nice package. 
 
-Overview:
+# Overview:
 
-Login Page:
-    Template provided by w3layouts (https://w3layouts.com/preview/?l=/entrar-shadow-flat-form-template/)
-    using the php-login-one-file by panique (https://github.com/panique/php-login-one-file) which both have 
+## Login Page:
+    Template provided by [w3layouts](https://w3layouts.com/preview/?l=/entrar-shadow-flat-form-template/)
+    using the [php-login-one-file by panique](https://github.com/panique/php-login-one-file) which both have 
     been modified for this project. Changing the color scheme and functionality of the registration page. 
     
-Status: 
+## Status: 
     Defualt landing page after log in. Shows system information such as hardware/software info, resource usage,
     mount points, uptime, interface stats, apcupsd info (if daemon exists) and more as time goes on. 
