@@ -75,8 +75,8 @@
 # PDU Setup:
     The RPC tool uses the fence_apc which is apart of the fence-agents package. It can communicate over ssh by adding
     -x to the command but it was not operational with my test unit (APC AP7901) so the -x is not included by default but
-    be easily added. If like me you got the device second hand and need to gain access to it you will need press the 
-    reset button twice using a paper clip and connect to the PDU via a 6-pin serial cable (APC 940-0144 940-0144A) that
+    can be easily added. If like me you got the device second hand and need to gain access to it you will need press the 
+    reset button twice using a paper clip and connect to the PDU via a 6-pin serial cable (APC 940-0144 or 940-0144A) that
     you can make or buy off eBay (easier). Use minicom or hyperterminal with the following settings 9600 8N1 no hardware
     and software flow control. Go through the various menus and make changes as you see fit. Be sure to change the connection
     type to Telnet under (2)Network -> (5)Telnet/SSH -> (2)Protocol Mode -> then (6)Accept Changes on the previous menu.
