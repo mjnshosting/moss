@@ -32,5 +32,51 @@ so many useful projects out there and I wanted to integrate them all into a nice
     which is what we have planned for the next phase of this project (**EPO**). 
 
 ## Connectivity:
-    This serves as a general connectivity and information tool that 
+    This serves as a general connectivity and information tool for basic tests over IPv4 and IPv6. This tool is v4 
+    v6 aware for Ping, Traceroute, Whois, and Nmap. DNS lookups have been disabled for speed and formatting purposed. 
+    
+## Wake On LAN:
+    This is where it all started. A simple Wake On LAN interface that takes a description, MAC address, and IP. 
+    Beside each entry there is a Wake and Delete button. The IP address can be used on the "Connectivity" page 
+    to see if the device has indeed woken up and is accessible via the network. If an extended ping is needed you
+    can use the "Shell Access" page.
+    
+## Remote Power Control:
+    This tool can control a network capable APC Power Distribution Units over the on the LAN or the WAN via a routed
+    network. This tool allows you to control the ports and check if the port is ON or OFF by selecting the desired 
+    entry's radio button and pressing the status icon which will update the "Status" column for the selected entry.
+    **This tool passes credentials via telnet and should only be used on a trusted network and the PDU should not be 
+    given a gateway unless absolutely necessary. Please view README and notes concernning PDU setup.**
+
+## Shell Access:
+    A web based shell provided by the [Shell In a Box](https://code.google.com/archive/p/shellinabox/) with an unofficial
+    fork located on GitHub (https://github.com/shellinabox/shellinabox). This is a web based shell that is proxied via 
+    Apache. From here you can have full access to the command line interface of the device to run tools that are not 
+    included in the web interface like iperf, nmap with more detailed options, and whatever else you want. 
+    Shell is the limit I guess you could say. 
+    
+## Remote Support: 
+    Here you can add remote support executables for customers if you choose but that depends on access to this interface
+    and if you allow customers to have such access. 
+    
+## Credits/License:
+    This project was inspired by [RPi-Experiences'](http://rpi-experiences.blogspot.com/p/rpi-monitor.html) RPi-Monitor
+    which is what I used and got the idea from. I did customize its interface quite a bit but wanted something a bit 
+    easier to edit and add tools to. Using JQuery and PHP I was able to achieve something like it but have a ways to 
+    go before i can match it. Also this project is more a tool to provide other services. Here you will find more 
+    information about the major projects used and their repspective license. Please note that this information needs
+    to be added if you plan to fork this project due to licensing. 
+    
+    
+
+# PDU Setup:
+    The RPC tool uses the fence_apc which is apart of the fence-agents package. It can communicate over ssh by adding
+    -x to the command but it was not operational with my test unit (APC AP7901) so the -x is not included by default but
+    be easily added. If like me you got the device second hand and need to gain access to it you will need press the 
+    reset button twice using a paper clip and connect to the PDU via a 6-pin serial cable (APC 940-0144 940-0144A) that
+    you can make or buy off eBay (easier). Use minicom or hyperterminal with the following settings 9600 8N1 no hardware
+    and software flow control. Go through the various menus and make changes as you see fit. Be sure to change the connection
+    type to Telnet under (2)Network -> (5)Telnet/SSH -> (2)Protocol Mode -> then (6)Accept Changes on the previous menu.
+    Changes will be applied when you log out. 
+    
     
