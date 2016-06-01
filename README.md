@@ -29,7 +29,9 @@ so many useful projects out there and I wanted to integrate them all into a nice
     protocols like HTTPS and SSH unless configured otherwise which we do not suggest because of the insecure nature
     PPTP. PPTP can be switched out with other VPN protocols such as OpenVPN (future default) and IPSec. PPTP is just
     easier and gives us what we need at this point which is a tunnel. This tunnel can terminate to a central server
-    which is what we have planned for the next phase of this project (**EPO**). 
+    which is what we have planned for the next phase of this project (**EPO**). A pptp_reconnect script is ran via 
+    cron job that checks the tunnel's health. Updates then tunnels status when on the Tunnel Home page as well as 
+    reconnect using newly entered credentials. The monitor IP can be changed from the tool's page. 
 
 ## Connectivity:
     This serves as a general connectivity and information tool for basic tests over IPv4 and IPv6. This tool is v4 
@@ -42,8 +44,8 @@ so many useful projects out there and I wanted to integrate them all into a nice
     can use the "Shell Access" page.
     
 ## Remote Power Control:
-    This tool can control a network capable APC Power Distribution Units over the on the LAN or the WAN via a routed
-    network. This tool allows you to control the ports and check if the port is ON or OFF by selecting the desired 
+    This tool can control a network capable APC Power Distribution Units over the on the LAN or the WAN. 
+    This tool allows you to control the ports and check if the port is ON or OFF by selecting the desired 
     entry's radio button and pressing the status icon which will update the "Status" column for the selected entry.
     **This tool passes credentials via telnet and should only be used on a trusted network and the PDU should not be 
     given a gateway unless absolutely necessary. Please view README and notes concernning PDU setup.**
