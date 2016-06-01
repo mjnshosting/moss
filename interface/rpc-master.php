@@ -53,9 +53,9 @@ if (empty($_SESSION['user_name'])) {
 		</div>
 		<div class='div-table-col' style="text-align: left">
 			<p style="font-weight: bold">Tool Description:</p>
-				<p>The purpose of this tool is to allow this device to 
-				</br>network capable APC Power Distribution Units over the 
-				</br>network. This tool allows you to control the ports and 
+				<p>This tool allows this device to control network
+				</br>capable APC Power Distribution Units.  
+				</br>This tool allows you to control the ports and 
 				</br>check if the port is ON or OFF by selecting the desired 
 				</br>entry's radio button and pressing the <img src="images/info-24.png" alt="status icon"> which will update 
 				</br>the "Status" column for the selected entry.</p>
@@ -77,7 +77,7 @@ if (empty($_SESSION['user_name'])) {
             <td class="td"><p style="font-weight: bold;">Cycle:</p></td>
             <td class="td"><p style="font-weight: bold;">Off:</p></td>
             <td class="td"><p style="font-weight: bold;">Status:</p></td>
-            <td class="td"><p style="font-weight: bold; padding-left: 50px"">Delete:</p></td>
+            <td class="td"><p style="font-weight: bold; padding-left: 50px">Delete:</p></td>
         </tr>
         <tr>
             <td align="center"><img onclick="onrpc();" src="images/bulb-32.png" alt="Power On" class="form-submit"></td>

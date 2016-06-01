@@ -1,15 +1,7 @@
 @import "grid.css";
 @import "../fonts/font-awesome.css";
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
-/* Content:
-  1. Global
-  2. Typography
-  3. Basic elements/styles
-  4. Auxiliary styles
-  5. Main layout elements/styles
-  6. Contact page styles
-  7. Media query styles
-  */
+
 /*css*/
 html,
 body {
