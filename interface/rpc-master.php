@@ -53,12 +53,12 @@ if (empty($_SESSION['user_name'])) {
 		</div>
 		<div class='div-table-col' style="text-align: left">
 			<p style="font-weight: bold">Tool Description:</p>
-				<p>This tool allows this device to control network
-				</br>capable APC Power Distribution Units.  
-				</br>This tool allows you to control the ports and 
-				</br>check if the port is ON or OFF by selecting the desired 
-				</br>entry's radio button and pressing the <img src="images/info-24.png" alt="status icon"> which will update 
-				</br>the "Status" column for the selected entry.</p>
+				<p>This tool allows this device to control network capable 
+				</br>APC Power Distribution Units. This tool allows you to 
+				</br>control the ports and check if the port is ON or OFF 
+				</br>by selecting the desired entry's radio button and pressing 
+				</br>the <img src="images/info-24.png" alt="status icon"> which will update the "Status" column for the selected 
+				</br>entry.</p>
 				<p style="font-weight:bold">**This tool passes credentials via telnet and should only 
 				</br>be used on a trusted network and the PDU should not be 
 				</br>given a gateway unless absolutely necessary. Please view 

@@ -29,6 +29,8 @@ if (empty($_SESSION['user_name'])) {
               </br>
               <label for="trace">Trace:</label>
               </br>
+              <label for="mtr">MTR:</label>
+              </br>
               <label for="trace">Whois:</label>
               </br>
               <label for="trace">NMap:</label>
@@ -38,6 +40,8 @@ if (empty($_SESSION['user_name'])) {
               </br>
               <input type="text" name="t_dest">
               </br>
+              <input type="text" name="mtr_dest">
+              </br>
               <input type="text" name="w_dest">
               </br>
               <input type="text" name="n_dest">
@@ -46,6 +50,8 @@ if (empty($_SESSION['user_name'])) {
                <img onclick="runping();" src="images/cogs-24.png" class="form-submit">
 	       </br>
                <img onclick="runtrace();" src="images/cogs-24.png" class="form-submit">
+	       </br>
+               <img onclick="runmtr();" src="images/cogs-24.png" class="form-submit">
 	       </br>
                <img onclick="runwhois();" src="images/cogs-24.png" class="form-submit">
 	       </br>

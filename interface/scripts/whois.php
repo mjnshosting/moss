@@ -18,9 +18,11 @@ if(preg_match("/^(?!\-)(?:[a-zA-Z\d\-]{0,62}[a-zA-Z\d]\.){1,126}(?!\d+)[a-zA-Z\d
 	$whois = "This is not a valid IPv4/IPv6 Address or Hostname. Please correct this and try again.";
 }
 
+echo "<div style='text-align: left; width: 500px; word-wrap: break-word; margin: 0 auto;'>";
 echo "<p>";
 echo "$whois";
 echo "</p>";
+echo "</div>";
 echo "</br>";
 echo "</br>";
 ?>

@@ -281,6 +281,25 @@ function runnmap() {
                 })
           }
 
+function runmtr() {
+		$('#outputconnectivity').html($(progress_image));
+                var formData = {
+                    'mtr_dest': $('input[name=mtr_dest]').val(),
+                        };
+                $.ajax({
+                    type        : 'POST',
+                    url         : 'scripts/mtr.php',
+                    data        : formData,
+                    encode      : true,
+		    success     : function(data) {
+                        $('#outputconnectivity').fadeOut(600, function () {
+                                $('#outputconnectivity').html(data)
+                        });
+                    $('#outputconnectivity').fadeIn(600);
+                    }
+                })
+          }
+
 function savemac() {
 		var formData = {
                     'smad': $('input[name=smad]').val(),

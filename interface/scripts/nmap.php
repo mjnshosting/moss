@@ -19,9 +19,11 @@ if(preg_match("/^(?!\-)(?:[a-zA-Z\d\-]{0,62}[a-zA-Z\d]\.){1,126}(?!\d+)[a-zA-Z\d
 }
 
 
+echo "<div style='text-align: left; width: 500px; word-wrap: break-word; margin: 0 auto;'>";
 echo "<p>";
 echo "$nmap";
 echo "</p>";
+echo "</div>";
 echo "</br>";
 echo "</br>";
 
