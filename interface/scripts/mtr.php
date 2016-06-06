@@ -25,5 +25,6 @@ echo "</table></br>";
 echo "<table><tr><td style='padding-right:10px'></td><td style='padding-right:10px'></td><td style='padding-right:10px'></td><td style='padding-right:10px'></td><td style='padding-right:10px'></td><td style='padding-right:10px'></td><td style='padding-right:10px'></td><td style='padding-right:10px'></td><td style='padding-right:10px'></td><td style='padding-right:10px'></td></tr>";
 echo "$mtr_6";
 echo "</table></br></br>";
+echo "<p style='font-weight: bold;'>**The MTR tool shown here only cycles 5 times. For a better depection of MTR data use the shell access tool to run MTR from the command line.**</p>";
 
 ?>
