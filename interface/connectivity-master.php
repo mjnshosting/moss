@@ -64,7 +64,7 @@ if (empty($_SESSION['user_name'])) {
       </div>
       <div class='div-table-col' align='left'>
         <div style='font-weight: bold;'>Tool Description:</div>
-        <div>The purpose of this tool is to allow the MJNS <br>MOSS device to test connectivity to devices <br>on the LAN and over the WAN. <br><p style="font-weight: bold;">**DNS lookups are disabled**</p></div>
+        <div>The purpose of this tool is to allow the MJNS <br>MOSS device to test connectivity to devices <br>on the LAN and over the WAN. <br><p style="font-weight: bold;">**DNS lookups are disabled except for MTR tool**</p></div>
       </div>
     </div>
   </div>
