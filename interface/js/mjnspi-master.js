@@ -208,7 +208,7 @@ function tunnelsave() {
 function runping() {
                 $('#outputconnectivity').html($(progress_image));
 		var formData = {
-                    'p_dest': $('input[name=p_dest]').val(),
+                    'p_dest': $('input[name=destination]').val(),
                         };
                 $.ajax({
                     type        : 'POST',
@@ -227,7 +227,7 @@ function runping() {
 function runtrace() {
 		$('#outputconnectivity').html($(progress_image));
                 var formData = {
-                    't_dest': $('input[name=t_dest]').val(),
+                    't_dest': $('input[name=destination]').val(),
                         };
                 $.ajax({
                     type        : 'POST',
@@ -246,7 +246,7 @@ function runtrace() {
 function runwhois() {
 		$('#outputconnectivity').html($(progress_image));
                 var formData = {
-                    'w_dest': $('input[name=w_dest]').val(),
+                    'w_dest': $('input[name=destination]').val(),
                         };
                 $.ajax({
                     type        : 'POST',
@@ -265,7 +265,7 @@ function runwhois() {
 function runnmap() {
 		$('#outputconnectivity').html($(progress_image));
                 var formData = {
-                    'n_dest': $('input[name=n_dest]').val(),
+                    'n_dest': $('input[name=destination]').val(),
                         };
                 $.ajax({
                     type        : 'POST',
@@ -284,7 +284,7 @@ function runnmap() {
 function runmtr() {
 		$('#outputconnectivity').html($(progress_image));
                 var formData = {
-                    'mtr_dest': $('input[name=mtr_dest]').val(),
+                    'mtr_dest': $('input[name=destination]').val(),
                         };
                 $.ajax({
                     type        : 'POST',

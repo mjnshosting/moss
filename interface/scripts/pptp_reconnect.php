@@ -2,9 +2,6 @@
 
 <?php
 
-$host = '192.168.209.1';
-$up = ping($host);
-
 function ping($host)
 {
         exec(sprintf('ping -c 10 -W 1 -n %s', escapeshellarg($host)), $res, $rval);
@@ -33,17 +30,31 @@ function ping($host)
     $trigger = $result->fetch();
     $result = $trigger[0];
 
-    //There are two executions of the poff command ensure the vpn is not up twice 
-    //which will cause issues on reconnect.
+    /*
+      This will kill all pppd connections at the time and then reinitiate the connection
+      with the new settings.
+    */
 
     if ($result == "1") {
 	shell_exec ('/usr/bin/killall -w -s SIGKILL pppd');
-	shell_exec ('/bin/mv /var/www/html/scripts/moss_tunnel /etc/ppp/peers/moss_tunnel');
+	shell_exec ('/bin/mv /var/www/html/moss/scripts/moss_tunnel /etc/ppp/peers/moss_tunnel');
 	shell_exec ('/bin/chmod 750 /etc/ppp/peers/moss_tunnel');
 	shell_exec ('/bin/chown root:dip /etc/ppp/peers/moss_tunnel');
         shell_exec ('pon moss_tunnel');
 	$update = $file_db->query('UPDATE tunnelhome SET thstf = 0 WHERE id = 1');
     }
+
+    $result = $file_db->query('SELECT thmf FROM tunnelhome');
+    $trigger = $result->fetch();
+    $host = $trigger[0];
+
+    $up = ping($host);
+
+    if ($up == false) {
+	shell_exec ('/usr/bin/killall -w -s SIGKILL pppd');
+        shell_exec ('pon moss_tunnel');
+    }
+
 
     /**************************************
     * Close db connections                *
@@ -59,9 +70,5 @@ function ping($host)
     echo $e->getMessage();
   }
 
-    if ($up == false) {
-	shell_exec ('/usr/bin/killall -w -s SIGKILL pppd');
-        shell_exec ('pon moss_tunnel');
-    }
 ?>
 
