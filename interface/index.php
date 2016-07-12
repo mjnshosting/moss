@@ -368,7 +368,7 @@ class OneFileLoginApplication
 	echo '<link href="css/login-style.css" rel="stylesheet" type="text/css" />';
 	echo '<meta name="viewport" content="width=device-width, initial-scale=1">';
 	echo '<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>';
-	echo '<link href="http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,300,600,700" rel="stylesheet" type="text/css">';
+	echo '<link href="https://fonts.googleapis.com/css?family=Open+Sans:600italic,400,300,600,700" rel="stylesheet" type="text/css">';
 	echo '</head>';
 	echo '<body>';
 	echo '<div class="main">';
@@ -410,7 +410,7 @@ class OneFileLoginApplication
         echo '<link href="css/login-style.css" rel="stylesheet" type="text/css" />';
         echo '<meta name="viewport" content="width=device-width, initial-scale=1">';
         echo '<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>';
-        echo '<link href="http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,300,600,700" rel="stylesheet" type="text/css">';
+        echo '<link href="https://fonts.googleapis.com/css?family=Open+Sans:600italic,400,300,600,700" rel="stylesheet" type="text/css">';
         echo '</head>';
         echo '<body>';
         echo '<div class="main">';
