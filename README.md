@@ -1,3 +1,6 @@
+# Updated Install instrucitons are located at: 
+    https://mjnshosting.atlassian.net/wiki/display/MKB/MOSS+Installation+Instructions
+
 # Overview:
     The purpose of this project is to make an interface that will be placed on a small raspberry pi/pc/server. 
     With said device we run various diagnostic tests such as a ping/trace/mtr/iperf from the interface. Other

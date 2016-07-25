@@ -14,7 +14,7 @@ $("#topmenu").html("<div class='container'> \
                                         <li><a href='#' id='shell' >Shell Access</a></li> \
                                 </ul> \
                         </li> \
-                        <li><a href='#' id='support'>Remote Support</a></li> \
+                        <li><a href='http://support.mjnshosting.com'>Remote Support</a></li> \
                         <li><a href='#' id='license'>Credit & License</a></li> \
                         <li><a href='http://www.mjnshosting.com/index-5.html' target='_blank'>Contacts</a></li> \
                     </ul> \
@@ -31,7 +31,7 @@ $("#footer").html(
                     '<h3>NAVIGATION</h3>'+
                     '<ul class="footer_list">'+
                         '<li><a href="#" id="dashboard2">Status</a></li>'+
-                        '<li><a href="#" id="support2">Remote Support</a></li>'+
+                        '<li><a href="http://support.mjnshosting.com">Remote Support</a></li>'+
                         '<li><a href="http://www.mjnshosting.com/index-5.html" target="_blank">Contacts</a></li>'+
                         '<li><a href="logout.php" >Logout</a></li>'+
                     '</ul>'+
@@ -90,7 +90,7 @@ $("#topmenu").html("<div class='container'> \
                                         <li><a href='tunnel-mobile.php' id='thome' >Tunnel Home</a></li> \
                                         <li><a href='connectivity-mobile.php' id='connectivity' >Connectivity</a></li> \
                                         <li><a href='wol-mobile.php' id='wol' >Wake On LAN</a></li> \
-                                        <li><a href='rpc-mobile.php' id='rpc' >Remote Power Control</a></li> \
+                                        <li><a href='http://support.mjnshosting.com'>Remote Power Control</a></li> \
 					<li><a href='shell-mobile.php' id='shell' >Shell Access</a></li> \
                                 </ul> \
                         </li> \
@@ -111,7 +111,7 @@ $("#footer").html(
                     '<h3>NAVIGATION</h3>'+
                     '<ul class="footer_list">'+
                         '<li><a href="index.php">Status</a></li>'+
-                        '<li><a href="support-mobile.php">Remote Support</a></li>'+
+                        '<li><a href="http://support.mjnshosting.com">Remote Support</a></li>'+
                         '<li><a href="http://www.mjnshosting.com/index-5.html" target="_blank">Contacts</a></li>'+
                         '<li><a href="logout.php" >Logout</a></li>'+
                     '</ul>'+
