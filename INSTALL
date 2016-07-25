@@ -1,11 +1,2 @@
-#Installation instructions:
-#Run the following commands as root or do that sudo crap.
-
-#After initial install run some updates
-apt-get update && apt-get upgrade
-apt-get install rpi-update
-rpi-update
-
-#Reboot before moving on
-
-#Execute INSTALL-0
+Updated Install instrucitons are located at: 
+https://mjnshosting.atlassian.net/wiki/display/MKB/MOSS+Installation+Instructions
