@@ -1,1 +1,2 @@
-/*.sqlite3
+/dbs/*.sqlite3
+/interface/scripts/moss_tunnel

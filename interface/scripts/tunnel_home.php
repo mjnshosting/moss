@@ -46,7 +46,7 @@ $thm = escapeshellcmd($_POST['thm']);
     $file_db->query('DELETE FROM tunnelhome WHERE id = 1');
     
     // Insert information into table
-    $insert = $file_db->prepare('INSERT INTO tunnelhome (thsf, thuf, thpf, thmf, thstf) VALUES (?, ?, ?, ?, ?)');
+    $insert = $file_db->prepare('INSERT INTO tunnelhome (thsf, thuf, thpf, thmf, thsf) VALUES (?, ?, ?, ?, ?)');
     $insert->execute(array($ths, $thu, $thp, $thm, '1'));
 
     // Query DB and create mac list text file that will show up in the iFrame
