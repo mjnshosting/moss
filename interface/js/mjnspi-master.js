@@ -31,7 +31,7 @@ $("#footer").html(
                     '<h3>NAVIGATION</h3>'+
                     '<ul class="footer_list">'+
                         '<li><a href="#" id="dashboard2">Status</a></li>'+
-                        '<li><a href="http://support.mjnshosting.com">Remote Support</a></li>'+
+                        '<li><a href="http://support.mjnshosting.com" target="_blank">Remote Support</a></li>'+
                         '<li><a href="http://www.mjnshosting.com/index-5.html" target="_blank">Contacts</a></li>'+
                         '<li><a href="logout.php" >Logout</a></li>'+
                     '</ul>'+
@@ -39,8 +39,8 @@ $("#footer").html(
                 '<div class="grid_3">'+
                     '<h3>FOR CUSTOMERS</h3>'+
                     '<ul class="footer_list">'+
-                       '<li><a href="https://tickets.mjnshosting.com/jira/servicedesk/customer/portal/1" target="_blank">SUPPORT TICKETS</a></li>'+
-                        '<li><a href="http://portal.mjnshosting.com" target="_blank">MJNS PORTAL</a></li>'+
+                       '<li><a href="https://mjnshosting.atlassian.net/servicedesk/customer/portal/1" target="_blank">SUPPORT TICKETS</a></li>'+
+                        '<li><a href="https://mjnshosting.atlassian.net/wiki/pages/viewpage.action?pageId=196616" target="_blank">MOSS Documentation</a></li>'+
                     '</ul>'+
                 '</div>'+
                 '<div class="grid_3">'+
@@ -48,6 +48,7 @@ $("#footer").html(
                     '<ul class="socials">'+
                         '<li><a href="http://twitter.com/mjnshosting" target="_blank"><i class="fa fa-twitter-square"></i>Twitter</a></li>'+
                         '<li><a href="http://facebook.com/mjnshosting" target="_blank"><i class="fa fa-facebook-square"></i>Facebook</a></li>'+
+                        '<li><a href="https://github.com/mjnshosting" target="_blank"><i class="fa fa-github-square"></i>GitHub</a></li>'+
                     '</ul>'+
                 '</div>'+
                 '<div class="grid_3">'+
